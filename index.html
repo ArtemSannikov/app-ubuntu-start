@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ubuntu для начинающих</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<!-- ################### Содержание ################### -->
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#" onclick="navigator.app.exitApp();" data-role="button" data-icon="power" data-iconpos="notext" data-shadow="false" data-transition="none">Выход</a>
+		<h1>Ubuntu</h1>
+		<a href="#info" data-role="button" data-icon="info" data-iconpos="notext" data-shadow="false" data-transition="none">Справка</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+
+			<li data-role="list-divider">Системная информация</li>
+			<li data-icon="false">
+				<a href="#system-info" data-transition="none">
+					<h2>uname -a</h2>
+					<p>Текущая версия ядра Linux</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#system-info2" data-transition="none">
+					<h2>date</h2>
+					<p>Текущая дата и время</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#system-info3" data-transition="none">
+					<h2>cal -3</h2>
+					<p>Вывод предыдущего, текущего и следующего месяца</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#system-info4" data-transition="none">
+					<h2>uptime</h2>
+					<p>Время работы компьютера без перезагрузки</p>
+				</a>
+			</li>
+
+			<li data-role="list-divider">Файлы и директории</li>
+
+			<li data-role="list-divider">Сеть (LAN и WiFi)</li>
+			<li data-icon="false">
+				<a href="#network-command" data-transition="none">
+					<h2>hostname</h2>
+					<p>Сетевое имя компьютера</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#network-command2" data-transition="none">
+					<h2>host</h2>
+					<p>IP адрес сайта</p>
+				</a>
+			</li>			
+
+			<li data-role="list-divider">Прочите команды</li>
+			<li data-icon="false">
+				<a href="#other-command" data-transition="none">
+					<h2>clear</h2>
+					<p>Очистка экрана терминала</p>
+				</a>
+			</li>
+
+			<li data-role="list-divider">Клавиатурные сочетания</li>
+
+		</ul>
+	</div>
+
+</div>
+
+<!-- ################### host ################### -->
+<div data-role="page" id="network-command2" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>host</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Как узнать IP адрес сайта</h3>
+		<p>Команда (host) позволяет узнать IP-адрес любого сайта при помощи команды:</p>
+		<div class="code-command"><p>$ host [url web-site]</p><p>$ host artemsannikov.ru</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/z-T88tOxuUY?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### hostname ################### -->
+<div data-role="page" id="network-command" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>hostname</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Сетевое имя компьютера</h3>
+		<p>Для того, чтобы вывести сетевое имя компьютера в терминале Ubuntu, воспользуйтесь следующей командой:</p>
+		<div class="code-command"><p>$ hostname</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/AbAqlAJjiiQ?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### uptime ################### -->
+<div data-role="page" id="system-info4" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>uptime</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Время работы компьютера без перезагрузки</h3>
+		<p>Для того, чтобы узнать время работы системы без перезагрузки и выключения в Ubuntu, воспользуйтесь следующей командой:</p>
+		<div class="code-command"><p>$ uptime</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/OFj0GcSGeeE?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### cal -3 ################### -->
+<div data-role="page" id="system-info3" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>cal -3</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Вывод предыдущего, текущего и следующего месяца</h3>
+		<p>Для вывода предыдущего, текущего и следующего месяца в терминале Ubuntu, воспользуйтесь командой:</p>
+		<div class="code-command"><p>$ cal -3</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/bt69NAPCkv0?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### uname -a ################### -->
+<div data-role="page" id="system-info" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>uname -a</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Текущая версия ядра Linux</h3>
+		<p>Для того чтобы вывести версию ядра linux в операционной системе Ubuntu необходимо воспользоваться командой:</p>
+		<div class="code-command"><p>$ uname -a</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/yzCCe0BzXJI?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### clear ################### -->
+<div data-role="page" id="other-command" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>clear</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Очищение экрана терминала</h3>
+		<p>Для того, чтобы очистить терминал от старых команд в Ubuntu, необходимо воспользоваться следующей командой:</p>
+		<div class="code-command"><p>$ clear</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/er6JEYWfoKw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### date ################### -->
+<div data-role="page" id="system-info2" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>date</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<h3>Вывод текущей даты и времени</h3>
+		<p>Для вывода текущей даты и время в Ubuntu, воспользуйтесь командой:</p>
+		<div class="code-command"><p>$ date</p></div>
+		<div class="video-youtube">
+			<iframe src="https://www.youtube.com/embed/KlQ9Bn1RZQc?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ################### Информация ################### -->
+<div data-role="page" id="info" data-theme="a">
+
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Назад" data-back-btn-theme="a">
+		<h1>Справка</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<p style="text-align:center;"><strong>Ubuntu для начинающих</strong></p>
+		<p style="text-align:center;">Версия 1.0</p>
+
+		<center><img src="images/logo.png" width="150"></center>
+		<p style="text-align:center;">Описание приложения</p>
+		
+		<p style="text-align:center;">Разработчик:</p>
+		<p style="text-align:center;">Артём Санников</p>
+	</div>
+
+</div>
+
+
+</body>
+</html>

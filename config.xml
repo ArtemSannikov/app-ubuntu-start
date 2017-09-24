@@ -26,4 +26,7 @@
 				<icon density="xxxhdpi" src="res/icons/android/xxxhdpi.png"/>
 			</platform>
 
+			<!-- Access to website -->
+			<access origin="https://youtube.com" subdomains="true" />
+
 	</widget>

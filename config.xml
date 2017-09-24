@@ -9,7 +9,7 @@
 		    <name>Ubuntu для начинающих</name>
 
 		    <!-- Описание приложения -->
-		    <description></description>
+		    <description>Данное приложение позволит вам освоить работу в терминале операционной системы Ubuntu.</description>
 
 		    <!-- Автор приложения -->
 		    <author href="https://artemsannikov.ru" email="info@artemsannikov.ru">
@@ -31,7 +31,7 @@
 
 			<!-- Разрешения -->
 			<preference name="permissions" value="none"/>
-			<preference name="fullscreen" value="true" />
+			<!--<preference name="fullscreen" value="true" />-->
 			<preference name="AllowInlineMediaPlayback" value="true" />
 			<preference name="InAppBrowserStorageEnabled" value="true" />
 			

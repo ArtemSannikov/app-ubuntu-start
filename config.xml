@@ -5,18 +5,18 @@
 		    versionCode  = "1"
 		    version      = "1.0.0">
 
-		    <!-- Name -->
+		    <!-- Название приложения -->
 		    <name>Ubuntu для начинающих</name>
 
-		    <!-- Description -->
+		    <!-- Описание приложения -->
 		    <description></description>
 
-		    <!-- Author -->
+		    <!-- Автор приложения -->
 		    <author href="https://artemsannikov.ru" email="info@artemsannikov.ru">
 		    	Artem Sannikov
 		    </author>
 
-		    <!-- Platform App Icons -->
+		    <!-- Иконки для платформы Android -->
 			<platform name="android">
 				<icon density="ldpi" src="res/icons/android/ldpi.png"/>
 				<icon density="mdpi" src="res/icons/android/mdpi.png"/>
@@ -26,11 +26,19 @@
 				<icon density="xxxhdpi" src="res/icons/android/xxxhdpi.png"/>
 			</platform>
 
-			<!-- Permissions -->
-			<preference name="permissions" value="true"/>
-			<preference name="fullscreen" value="true" />
+			<!-- Стартовая страница -->
+			<content src="index.html"></content>
 
-			<!-- Access to website -->
+			<!-- Разрешения -->
+			<preference name="permissions" value="none"/>
+			<preference name="fullscreen" value="true" />
+			<preference name="AllowInlineMediaPlayback" value="true" />
+			<preference name="InAppBrowserStorageEnabled" value="true" />
+			
+			<!-- Whilelist plugin cordova -->
+			<plugin name="cordova-plugin-whitelist" spec="1" />
+
+			<!-- Доступ к web сайтам -->
 			<access origin="*" />
 			<allow-intent href="http://*/*" />
 			<allow-intent href="https://*/*" />

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ubuntu: Быстрый старт</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<!-- ################### Содержание ################### -->
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#sidebar" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right">Меню</a>
+		<h1>Ubuntu</h1>
+		<a href="#" onclick="navigator.app.exitApp();" data-role="button" data-icon="power" data-iconpos="notext" data-shadow="false" data-transition="none">Выход</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<div data-role="panel" data-display="overlay" data-position="left" id="sidebar">
+
+			<center><img src="images/logo.png" width="140" style="margin-bottom: 30px;"></center>
+
+			<ul data-role="listview">
+				<li data-role="list-divider">Информация</li>
+				<li data-icon="false"><a href="main/about.html" data-transition="none">О приложении</a></li>
+				<li data-icon="false"><a href="main/contact.html" data-transition="none">Контакты</a></li>
+				<li data-icon="false"><a href="https://play.google.com/store/apps/details?id=com.ubuntu.start" rel="external" data-transition="none">Оставить отзыв</a></li>
+				<li data-icon="false"><a href="https://play.google.com/store/apps/developer?id=Артём+Санников" rel="external" data-transition="none">Другие приложения</a></li>
+				<li data-role="list-divider">Настройки</li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+			</ul>	
+		</div>
+
+		<ul data-role="listview" data-inset="true">
+			<li data-icon="false">
+				<a href="main/system-info.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/system-info.png"/>
+					<h2>Системная<br/>информация</h2>
+					<span class="ui-li-count">5</span>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="main/file-directory.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/file-directory.png"/>
+					<h2>Файлы и<br/>директории</h2>
+					<span class="ui-li-count">16</span>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="main/network.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/network.png"/>
+					<h2>Сеть<br/>(LAN и WiFi)</h2>
+					<span class="ui-li-count">2</span>
+				</a>
+			<li data-icon="false">
+				<a href="main/keyboard.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/keyboard.png"/>
+					<h2>Клавиатурные<br/>сочетания</h2>
+					<span class="ui-li-count">7</span>
+				</a>
+			</li>
+			</li>
+			<li data-icon="false">
+				<a href="main/other.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/other.png"/>
+					<h2>Прочите<br/>команды</h2>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

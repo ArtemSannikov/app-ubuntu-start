@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>О приложении</title>
+	<title>Пользователи и группы</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -21,27 +21,25 @@
 </head>
 <body>
 
-<div data-role="page" id="about" data-theme="a">
+<div data-role="page" id="group-user" data-theme="a">
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
-		<h1>О приложении</h1>
+		<h1>Пользователи и группы</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
-
-		<p style="text-align:center;"><strong>Ubuntu: Быстрый старт</strong></p>
-		<p style="text-align:center;">Версия 1.0.3</p>
-
-		<center><img src="../images/logo.png" width="150"></center>
-		<p style="text-align:center;">Данное приложение позволит вам освоить работу в терминале операционной системы Ubuntu.</p>
-		
-		<p style="text-align:center;">Разработчик:</p>
-		<p style="text-align:center;">Артём Санников</p>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+			<li data-icon="false">
+				<a href="" data-transition="none" data-ajax="true">
+					<h2></h2>
+					<p></p>
+				</a>
+			</li>
+		</ul>
 	</div>
 
 </div>
-
 
 </body>
 </html>

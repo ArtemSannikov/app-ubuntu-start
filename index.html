@@ -32,6 +32,8 @@
 
 	<div data-role="main" class="ui-content">
 
+
+		<!-- Выезжающая панель слева -->
 		<div data-role="panel" data-display="overlay" data-position="left" id="sidebar">
 
 			<center><img src="images/logo.png" width="140" style="margin-bottom: 30px;"></center>
@@ -40,13 +42,41 @@
 				<li data-role="list-divider">Информация</li>
 				<li data-icon="false"><a href="main/about.html" data-transition="none">О приложении</a></li>
 				<li data-icon="false"><a href="main/contact.html" data-transition="none">Контакты</a></li>
-				<li data-icon="false"><a href="https://play.google.com/store/apps/details?id=com.ubuntu.start" rel="external" data-transition="none">Оставить отзыв</a></li>
-				<li data-icon="false"><a href="https://play.google.com/store/apps/developer?id=Артём+Санников" rel="external" data-transition="none">Другие приложения</a></li>
-				<li data-role="list-divider">Настройки</li>
+				<!--<li data-icon="false"><a href="https://play.google.com/store/apps/details?id=com.ubuntu.start" rel="external" data-transition="none">Оставить отзыв</a></li>
+				<li data-icon="false"><a href="https://play.google.com/store/apps/developer?id=Артём+Санников" rel="external" data-transition="none">Другие приложения</a></li>-->
+				<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
+				<li data-icon="false"><a href="#PopupPageDeveloper" data-rel="popup" data-position-to="window" data-transition="none">Другие приложения</a></li>
 				<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
 			</ul>	
 		</div>
 
+		<!-- Всплывающее окно: Оставить отзыв -->
+		<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Редирект</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Переход на Play Market</h3>
+				<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+				<a href="https://play.google.com/store/apps/details?id=com.ubuntu.start" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+			</div>
+		</div>
+
+		<!-- Всплывающее окно: Другие приложения -->
+		<div data-role="popup" id="PopupPageDeveloper" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Редирект</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Переход на Play Market</h3>
+				<p>Сейчас вы будете перенаправлены на страницу разработчика в Play Market, где сможете найти другие приложения автора.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+				<a href="https://play.google.com/store/apps/developer?id=Артём+Санников" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+			</div>
+		</div>
+
+		<!-- Список разделов -->
 		<ul data-role="listview" data-inset="true">
 			<li data-icon="false">
 				<a href="main/system-info.html" data-transition="none" data-ajax="true">
@@ -68,6 +98,35 @@
 					<h2>Сеть<br/>(LAN и WiFi)</h2>
 					<span class="ui-li-count">2</span>
 				</a>
+			</li>
+			<!--<li data-icon="false">
+				<a href="main/group-user.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/group-user.png"/>
+					<h2>Пользователи<br/>и группы</h2>
+					<span class="ui-li-count">0</span>
+				</a>
+			</li>-->
+			<li data-icon="false">
+				<a href="main/view-file.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/view-file.png"/>
+					<h2>Просмотр<br/>содержимого файлов</h2>
+					<span class="ui-li-count">7</span>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="main/analyze-file-system.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/analyze-file-system.png"/>
+					<h2>Анализ файловых<br/>систем</h2>
+					<span class="ui-li-count">6</span>
+				</a>
+			</li>
+			<!--<li data-icon="false">
+				<a href="main/format-file-system.html" data-transition="none" data-ajax="true">
+					<img src="images/icon/main/format-file-system.png"/>
+					<h2>Форматирование<br/>файловых систем</h2>
+					<span class="ui-li-count">0</span>
+				</a>
+			</li>-->
 			<li data-icon="false">
 				<a href="main/keyboard.html" data-transition="none" data-ajax="true">
 					<img src="images/icon/main/keyboard.png"/>
@@ -75,11 +134,10 @@
 					<span class="ui-li-count">7</span>
 				</a>
 			</li>
-			</li>
 			<li data-icon="false">
 				<a href="main/other.html" data-transition="none" data-ajax="true">
 					<img src="images/icon/main/other.png"/>
-					<h2>Прочите<br/>команды</h2>
+					<h2>Прочие<br/>команды</h2>
 					<span class="ui-li-count">1</span>
 				</a>
 			</li>

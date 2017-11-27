@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ubuntu: Быстрый старт</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
+		<h1>Ubuntu</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Выезжающая панель слева -->
+		<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true">
+
+			<center><img src="images/logo.png" style="margin-bottom: 30px;" width="140"></center>
+
+			<ul data-role="listview">
+				<li data-icon="false"><a href="main/about.html" data-transition="none">О приложении</a></li>
+				<li data-icon="false"><a href="main/contact.html" data-transition="none">Контакты</a></li>
+				<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
+				<li data-icon="false"><a href="#PopupPageDeveloper" data-rel="popup" data-position-to="window" data-transition="none">Другие приложения</a></li>
+			</ul>	
+		</div>
+
+		<!-- Всплывающее окно: Оставить отзыв -->
+		<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Редирект</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Переход на Play Market</h3>
+				<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+				<a href="https://play.google.com/store/apps/details?id=com.ubuntu.start" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+			</div>
+		</div>
+
+		<!-- Всплывающее окно: Другие приложения -->
+		<div data-role="popup" id="PopupPageDeveloper" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Редирект</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Переход на Play Market</h3>
+				<p>Сейчас вы будете перенаправлены на страницу разработчика в Play Market, где сможете найти другие приложения автора.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+				<a href="https://play.google.com/store/apps/developer?id=Артём+Санников" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+			</div>
+		</div>
+
+		<!-- Список разделов -->
+		<ul data-role="listview" data-inset="false">
+
+			<li data-icon="false">
+				<a href="main/system-info.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/system-info.png"/>
+					<h2>Системная<br/>информация</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/file-directory.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/file-directory.png"/>
+					<h2>Файлы и<br/>директории</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/network.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/network.png"/>
+					<h2>Сеть<br/>(LAN и WiFi)</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/group-user.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/group-user.png"/>
+					<h2>Пользователи<br/>и группы</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/view-file.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/view-file.png"/>
+					<h2>Просмотр<br/>содержимого файлов</h2>
+				</a>
+			</li>
+
+			<!--<li data-icon="false">
+				<a href="main/" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/.png"/>
+					<h2>Архивирование и сжатие<br/>файлов</h2>
+				</a>
+			</li>-->
+
+			<li data-icon="false">
+				<a href="main/analyze-file-system.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/analyze-file-system.png"/>
+					<h2>Анализ файловых<br/>систем</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/format-file-system.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/format-file-system.png"/>
+					<h2>Форматирование<br/>файловых систем</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/swap.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/swap.png"/>
+					<h2>SWAP-пространство</h2>
+				</a>
+			</li>
+
+			<!--<li data-icon="false">
+				<a href="main/" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/.png"/>
+					<h2>DEB пакеты</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/.png"/>
+					<h2>APT - средство<br/>управление пакетами</h2>
+				</a>
+			</li>-->
+
+			<li data-icon="false">
+				<a href="main/keyboard.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/keyboard.png"/>
+					<h2>Клавиатурные<br/>сочетания</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/other.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/other.png"/>
+					<h2>Прочие<br/>команды</h2>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Форматирование файловых систем</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="format-file-system" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>Форматирование файловых систем</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Список команд -->
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+			<li data-icon="false">
+				<a href="../command/format-file-system/mkfs.html" data-transition="none" data-ajax="false">
+					<h2>mkfs [dev]</h2>
+					<p>Создать linux-файловую систему<br/>на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/format-file-system/mke2fs.html" data-transition="none" data-ajax="false">
+					<h2>mke2fs [dev]</h2>
+					<p>Создать файловую систему<br/>ext2 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/format-file-system/mke2fs-j.html" data-transition="none" data-ajax="false">
+					<h2>mke2fs -j [dev]</h2>
+					<p>Создать журналирующую файловую<br/>систему ext3 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/format-file-system/mkfs-t-vfat-32.html" data-transition="none" data-ajax="false">
+					<h2>mkfs -t vfat 32 -F [dev]</h2>
+					<p>Создать файловую систему<br/>FAT32 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/format-file-system/fdformat-n.html" data-transition="none" data-ajax="false">
+					<h2>fdformat -n [dev]</h2>
+					<p>Форматирование floppy-диска<br/>без проверки.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/format-file-system/mkswap.html" data-transition="none" data-ajax="false">
+					<h2>mkswap [dev]</h2>
+					<p>Создание swap-пространства<br/>на разделе [dev].</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

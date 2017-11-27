@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Клавиатурные сочетания</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="keyboard" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>Клавиатурные сочетания</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Список команд -->
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+			<li data-icon="false">
+				<a href="../command/keyboard/!!.html" data-transition="none" data-ajax="false">
+					<h2>!!</h2>
+					<p>Выполнение предыдущей команды</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/ctrl+c.html" data-transition="none" data-ajax="false">
+					<h2>Ctrl+C</h2>
+					<p>Завершить текущую команду</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/ctrl+d.html" data-transition="none" data-ajax="false">
+					<h2>Ctrl+D</h2>
+					<p>Разлогиниться</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/ctrl+u.html" data-transition="none" data-ajax="false">
+					<h2>Ctrl+U</h2>
+					<p>Удалить строку</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/ctrl+w.html" data-transition="none" data-ajax="false">
+					<h2>Ctrl+W</h2>
+					<p>Удалить одно слово в<br/>текущей строке</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/ctrl+z.html" data-transition="none" data-ajax="false">
+					<h2>Ctrl+Z</h2>
+					<p>Остановить текущую команду</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/keyboard/exit.html" data-transition="none" data-ajax="false">
+					<h2>exit</h2>
+					<p>Разлогиниться</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

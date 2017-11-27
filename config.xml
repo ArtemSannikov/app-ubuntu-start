@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns        = "http://www.w3.org/ns/widgets"
+		    xmlns:gap    = "http://phonegap.com/ns/1.0"
+		    id           = "com.ubuntu.start"
+		    versionCode  = "6"
+		    version      = "1.0.5">
+
+		    <!-- Название приложения -->
+		    <name>Ubuntu</name>
+
+		    <!-- Описание приложения -->
+		    <description>Данное приложение позволит вам освоить работу в терминале операционной системы Ubuntu.</description>
+
+		    <!-- Автор приложения -->
+		    <author href="https://artemsannikov.ru" email="info@artemsannikov.ru">
+		    	Artem Sannikov
+		    </author>
+
+		    <!-- Иконки для платформы Android -->
+			<platform name="android">
+				<icon density="ldpi" src="res/icons/android/ldpi.png"/>
+				<icon density="mdpi" src="res/icons/android/mdpi.png"/>
+				<icon density="hdpi" src="res/icons/android/hdpi.png"/>
+				<icon density="xhdpi" src="res/icons/android/xhdpi.png"/>
+				<icon density="xxhdpi" src="res/icons/android/xxhdpi.png"/>
+				<icon density="xxxhdpi" src="res/icons/android/xxxhdpi.png"/>
+			</platform>
+
+			<!-- Стартовая страница -->
+			<content src="index.html"></content>
+
+			<!-- Разрешения -->
+			<preference name="permissions" value="none"/>
+			<!--<preference name="fullscreen" value="true" />-->
+			<preference name="AllowInlineMediaPlayback" value="true" /> <!-- разрешить воспроизведение медиафайлов html5 -->
+			<preference name="MediaPlaybackRequiresUserAction" value="false" /> <!-- отмена автоматического воспроизведения -->
+			<preference name="InAppBrowserStorageEnabled" value="true" />
+			
+			<!-- Плагины -->
+			<plugin name="cordova-plugin-whitelist" spec="1" /> <!-- Для открытия внешних ссылок -->
+
+			<!-- Доступ к web сайтам -->
+			<access origin="*" />
+			<allow-intent href="http://*/*" />
+			<allow-intent href="https://*/*" />
+			<allow-intent href="tel:*" />
+			<allow-intent href="sms:*" />
+			<allow-intent href="mailto:*" />
+			<allow-intent href="geo:*" />
+			<platform name="android">
+				<allow-intent href="market:*" />
+			</platform>
+
+	</widget>

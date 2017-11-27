@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Системная информация</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="system-info" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>Системная информация</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Список команд -->
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+			<li data-icon="false">
+				<a href="../command/system-info/uname-a.html" data-transition="none" data-ajax="false">
+					<h2>uname -a</h2>
+					<p>Текущая версия ядра Linux</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/system-info/date.html" data-transition="none" data-ajax="false">
+					<h2>date</h2>
+					<p>Текущая дата и время</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/system-info/cal-3.html" data-transition="none" data-ajax="false">
+					<h2>cal -3</h2>
+					<p>Вывод предыдущего, текущего<br/>и следующего месяца</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/system-info/uptime.html" data-transition="none" data-ajax="false">
+					<h2>uptime</h2>
+					<p>Время работы компьютера без перезагрузки</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/system-info/whereis-bash.html" data-transition="none" data-ajax="false">
+					<h2>whereis bash</h2>
+					<p>Путь до командного интерпретатора bash</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

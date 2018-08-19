@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Поиск</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="contact" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>Поиск</h1>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
+
+			<!------------------------------------ Системная информация ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/system-info/uname.html" data-transition="none" data-ajax="false">
+					<h2>uname</h2>
+					<p>Информация о системе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/cal.html" data-transition="none" data-ajax="false">
+					<h2>cal</h2>
+					<p>Вывод календаря.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/uptime.html" data-transition="none" data-ajax="false">
+					<h2>uptime</h2>
+					<p>Время работы компьютера.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/whereis.html" data-transition="none" data-ajax="false">
+					<h2>whereis</h2>
+					<p>Выводит путь к указанной программе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/lspci.html" data-transition="none" data-ajax="false">
+					<h2>lspci</h2>
+					<p>Информация о PCI устройствах.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/lsusb.html" data-transition="none" data-ajax="false">
+					<h2>lsusb</h2>
+					<p>Информация о шинах и устройствах USB.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/lshw.html" data-transition="none" data-ajax="false">
+					<h2>lshw</h2>
+					<p>Список аппаратных устройств.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/free.html" data-transition="none" data-ajax="false">
+					<h2>free</h2>
+					<p>Информация о используемой памяти<br>в системе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-info/last.html" data-transition="none" data-ajax="false">
+					<h2>last</h2>
+					<p>История выключений и перезагрузок.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Файлы и директории ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/file-directory/cd.html" data-transition="none" data-ajax="false">
+					<h2>cd</h2>
+					<p>Переход в другой каталог.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/ls.html" data-transition="none" data-ajax="false">
+					<h2>ls</h2>
+					<p>Выводит содержимое каталога.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/cp.html" data-transition="none" data-ajax="false">
+					<h2>cp</h2>
+					<p>Копирование файла или каталога.</p>
+				</a>
+			</li>				
+			<li data-icon="false">
+				<a href="../../command/file-directory/mv.html" data-transition="none" data-ajax="false">
+					<h2>mv</h2>
+					<p>перемещение и переименование файлов.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/pwd.html" data-transition="none" data-ajax="false">
+					<h2>pwd</h2>
+					<p>Выводит название текущего каталога.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/rm.html" data-transition="none" data-ajax="false">
+					<h2>rm</h2>
+					<p>Удаление файлов и каталогов.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/mkdir.html" data-transition="none" data-ajax="false">
+					<h2>mkdir</h2>
+					<p>Создание каталога.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/rmdir.html" data-transition="none" data-ajax="false">
+					<h2>rmdir</h2>
+					<p>Удаление директории.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/file.html" data-transition="none" data-ajax="false">
+					<h2>file</h2>
+					<p>Определяет тип файла.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/less.html" data-transition="none" data-ajax="false">
+					<h2>less</h2>
+					<p>Постраничный вывод содержимого файла с<br/>возможностью пролистывания.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/head.html" data-transition="none" data-ajax="false">
+					<h2>head</h2>
+					<p>Просмотр начала файла.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/tail.html" data-transition="none" data-ajax="false">
+					<h2>tail</h2>
+					<p>Просмотр конца файла.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/more.html" data-transition="none" data-ajax="false">
+					<h2>more</h2>
+					<p>Постраничный вывод содержимого<br/>файла.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/cat.html" data-transition="none" data-ajax="false">
+					<h2>cat</h2>
+					<p>Вывод содержимого файла.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/file-directory/tac.html" data-transition="none" data-ajax="false">
+					<h2>tac</h2>
+					<p>Вывод содержимого файла в обратном<br/>порядке.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Сеть (LAN и WiFi) ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/network/hostname.html" data-transition="none" data-ajax="false">
+					<h2>hostname</h2>
+					<p>Сетевое имя компьютера.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/host.html" data-transition="none" data-ajax="false">
+					<h2>host</h2>
+					<p>Вывод IP-адреса сайта.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/hostid.html" data-transition="none" data-ajax="false">
+					<h2>hostid</h2>
+					<p>Вывод число-идентификатор<br>компьютера.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/route.html" data-transition="none" data-ajax="false">
+					<h2>route</h2>
+					<p>Вывод таблицы маршрутизации.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/whois.html" data-transition="none" data-ajax="false">
+					<h2>whois</h2>
+					<p>Вывод регистрационных данных<br>владельца доменного имени.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/netstat.html" data-transition="none" data-ajax="false">
+					<h2>netstat</h2>
+					<p>Вывод всех сетевых подключений.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/ifup.html" data-transition="none" data-ajax="false">
+					<h2>ifup</h2>
+					<p>Активация сетевого интерфейса.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/network/ifdown.html" data-transition="none" data-ajax="false">
+					<h2>ifdown</h2>
+					<p>Деактивация сетевого интерфейса.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Пользователи и группы ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/group-user/groupadd.html" data-transition="none" data-ajax="false">
+					<h2>groupadd</h2>
+					<p>Создание новой группы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/groupdel.html" data-transition="none" data-ajax="false">
+					<h2>groupdel</h2>
+					<p>Удаление группы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/groupmod-n.html" data-transition="none" data-ajax="false">
+					<h2>groupmod -n [new_group_name]<br/>[old_group_name]</h2>
+					<p>Переименовать группу [new_group_name]<br/>в [old_group_name].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/useradd.html" data-transition="none" data-ajax="false">
+					<h2>useradd</h2>
+					<p>Создать нового пользователя.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/userdel-r.html" data-transition="none" data-ajax="false">
+					<h2>userdel -r [user]</h2>
+					<p>Удалить пользователя [user]<br/>и его домашний каталог.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/passwd.html" data-transition="none" data-ajax="false">
+					<h2>passwd</h2>
+					<p>Изменить пароль пользователя.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/chage-e.html" data-transition="none" data-ajax="false">
+					<h2>chage -E [date] [user]</h2>
+					<p>Установить дату окончания действия<br/>учётной записи пользователя [user].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/pwck.html" data-transition="none" data-ajax="false">
+					<h2>pwck</h2>
+					<p>Проверка системных файлов: /etc/passwd<br>и /etc/shadow учётных записей</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/grpck.html" data-transition="none" data-ajax="false">
+					<h2>grpck</h2>
+					<p>Проверка системных файлов<br>/etc/group учётных записей.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/w.html" data-transition="none" data-ajax="false">
+					<h2>w</h2>
+					<p>Список пользователей<br>авторизованных в системе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/group-user/logname.html" data-transition="none" data-ajax="false">
+					<h2>logname</h2>
+					<p>Выводит имя пользователя.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Управление системой ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/system-control/shutdown.html" data-transition="none" data-ajax="false">
+					<h2>shutdown</h2>
+					<p>Завершение работы системы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/system-control/reboot.html" data-transition="none" data-ajax="false">
+					<h2>reboot</h2>
+					<p>Перезагрузка системы.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Анализ файловых систем ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/analyze-file-system/badblocks.html" data-transition="none" data-ajax="false">
+					<h2>badblocks</h2>
+					<p>Проверка раздела на наличие<br>bad-блоков.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/analyze-file-system/fsck.html" data-transition="none" data-ajax="false">
+					<h2>fsck</h2>
+					<p>Проверить/восстановить целостность<br/>файловой системы.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Форматирование файловых систем ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/format-file-system/mkfs.html" data-transition="none" data-ajax="false">
+					<h2>mkfs [dev]</h2>
+					<p>Создать linux-файловую систему<br/>на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/format-file-system/mke2fs.html" data-transition="none" data-ajax="false">
+					<h2>mke2fs [dev]</h2>
+					<p>Создать файловую систему<br/>ext2 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/format-file-system/mke2fs-j.html" data-transition="none" data-ajax="false">
+					<h2>mke2fs -j [dev]</h2>
+					<p>Создать журналирующую файловую<br/>систему ext3 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/format-file-system/mkfs-t-vfat-32.html" data-transition="none" data-ajax="false">
+					<h2>mkfs -t vfat 32 -F [dev]</h2>
+					<p>Создать файловую систему<br/>FAT32 на разделе [dev].</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/format-file-system/fdformat-n.html" data-transition="none" data-ajax="false">
+					<h2>fdformat -n [dev]</h2>
+					<p>Форматирование floppy-диска<br/>без проверки.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ SWAP-пространство ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/swap/mkswap.html" data-transition="none" data-ajax="false">
+					<h2>mkswap</h2>
+					<p>Создание swap-пространства.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/swap/swapon.html" data-transition="none" data-ajax="false">
+					<h2>swapon</h2>
+					<p>Активация swap-пространства.</p>
+				</a>
+			</li>			
+			
+			<!------------------------------------ Прочие команды ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/other/clear.html" data-transition="none" data-ajax="false">
+					<h2>clear</h2>
+					<p>Очистка экрана терминала.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/whatis.html" data-transition="none" data-ajax="false">
+					<h2>whatis</h2>
+					<p>Вывод краткого описания программы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/gpg.html" data-transition="none" data-ajax="false">
+					<h2>gpg</h2>
+					<p>Инструмент для шифрования<br>и цифровой подписи.</p>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="../../command/other/wget.html" data-transition="none" data-ajax="false">
+					<h2>wget</h2>
+					<p>Загрузка файлов через Интернет.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/ldd.html" data-transition="none" data-ajax="false">
+					<h2>ldd</h2>
+					<p>Выводит список библиотек, которые<br/>необходимы для работы программы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/alias.html" data-transition="none" data-ajax="false">
+					<h2>alias</h2>
+					<p>Назначить псевдоним программе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/!!.html" data-transition="none" data-ajax="false">
+					<h2>!!</h2>
+					<p>Выполнить предыдущую команду.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/rev.html" data-transition="none" data-ajax="false">
+					<h2>rev</h2>
+					<p>Зеркальное отображение строки.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/yes.html" data-transition="none" data-ajax="false">
+					<h2>yes</h2>
+					<p>Бесконечное отображение<br>указанного текста.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/other/space-command.html" data-transition="none" data-ajax="false">
+					<h2>[Пробел] Команда</h2>
+					<p>Не записывать команду в историю.</p>
+				</a>
+			</li>
+
+			<!------------------------------------ Справочная информация ------------------------------------>
+			<li data-icon="false">
+				<a href="../../command/help/apropos.html" data-transition="none" data-ajax="false">
+					<h2>apropos</h2>
+					<p>Выводит список команд, которые имеют<br/>отношение к ключевому слову.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../../command/help/man.html" data-transition="none" data-ajax="false">
+					<h2>man</h2>
+					<p>Вызов руководства по работе с программой.</p>
+				</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+</div>
+
+
+</body>
+</html>

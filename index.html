@@ -25,26 +25,28 @@
 <div data-role="page" id="home" data-theme="a">
 
 	<div data-role="header">
-		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="left" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
 		<h1>Ubuntu</h1>
+		<a href="main/page/search.html" data-role="button" data-icon="search" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="false" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Выезжающая панель слева -->
+		<!---------------------- Выезжающая панель слева ---------------------->
 		<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true">
 
 			<center><img src="images/logo.png" style="margin-bottom: 30px;" width="140"></center>
 
 			<ul data-role="listview">
-				<li data-icon="false"><a href="main/about.html" data-transition="none">О приложении</a></li>
-				<li data-icon="false"><a href="main/contact.html" data-transition="none">Контакты</a></li>
+				<li data-icon="false"><a href="main/page/donate.html" data-transition="none" data-ajax="false">Помочь проекту</a></li>
+				<li data-icon="false"><a href="main/page/about.html" data-transition="none" data-ajax="false">О приложении</a></li>
+				<li data-icon="false"><a href="main/page/contact.html" data-transition="none" data-ajax="false">Контакты</a></li>
 				<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
 				<li data-icon="false"><a href="#PopupPageDeveloper" data-rel="popup" data-position-to="window" data-transition="none">Другие приложения</a></li>
 			</ul>	
 		</div>
 
-		<!-- Всплывающее окно: Оставить отзыв -->
+		<!---------------------- Всплывающее окно: Оставить отзыв ---------------------->
 		<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
 			<div data-role="header" data-theme="a">
 				<h1>Редирект</h1>
@@ -57,7 +59,7 @@
 			</div>
 		</div>
 
-		<!-- Всплывающее окно: Другие приложения -->
+		<!---------------------- Всплывающее окно: Другие приложения ---------------------->
 		<div data-role="popup" id="PopupPageDeveloper" data-overlay-theme="a" data-theme="a" data-dismissible="false">
 			<div data-role="header" data-theme="a">
 				<h1>Редирект</h1>
@@ -70,7 +72,7 @@
 			</div>
 		</div>
 
-		<!-- Список разделов -->
+		<!---------------------- Список разделов ---------------------->
 		<ul data-role="listview" data-inset="false">
 
 			<li data-icon="false">
@@ -102,18 +104,11 @@
 			</li>
 
 			<li data-icon="false">
-				<a href="main/view-file.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/view-file.png"/>
-					<h2>Просмотр<br/>содержимого файлов</h2>
+				<a href="main/system-control.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/system-control.png"/>
+					<h2>Управление<br>системой</h2>
 				</a>
 			</li>
-
-			<!--<li data-icon="false">
-				<a href="main/" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/.png"/>
-					<h2>Архивирование и сжатие<br/>файлов</h2>
-				</a>
-			</li>-->
 
 			<li data-icon="false">
 				<a href="main/analyze-file-system.html" data-transition="none" data-ajax="false">
@@ -136,20 +131,6 @@
 				</a>
 			</li>
 
-			<!--<li data-icon="false">
-				<a href="main/" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/.png"/>
-					<h2>DEB пакеты</h2>
-				</a>
-			</li>
-
-			<li data-icon="false">
-				<a href="main/" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/.png"/>
-					<h2>APT - средство<br/>управление пакетами</h2>
-				</a>
-			</li>-->
-
 			<li data-icon="false">
 				<a href="main/keyboard.html" data-transition="none" data-ajax="false">
 					<img src="images/icon/main/keyboard.png"/>
@@ -161,6 +142,13 @@
 				<a href="main/other.html" data-transition="none" data-ajax="false">
 					<img src="images/icon/main/other.png"/>
 					<h2>Прочие<br/>команды</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="main/help.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/help.png"/>
+					<h2>Справочная<br>информация</h2>
 				</a>
 			</li>
 			

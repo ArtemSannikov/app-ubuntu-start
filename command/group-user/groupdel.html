@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>groupdel [group_name]</title>
+	<title>groupdel</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -24,20 +24,19 @@
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
-		<h1>groupdel [group_name]</h1>
+		<h1>groupdel</h1>
 		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Описание команды -->
-		<h3>Удаление группы</h3>
-		<p>Для того, чтобы удалить группу пользователей воспользуйтесь командой:</p>
-		<div class="code-command"><p>$ groupdel [group_name] //команда<br/>$ groupdel test //удалить группу с названием test</p></div>
-		<!--<h3>Видеоурок</h3>
-		<div class="video-youtube">
-			<iframe src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+		<p>Команда <strong>groupdel</strong> удаляет определение группы из системы путем удаления записи о соответствующей группе из файла /etc/group. </p>
+		<p>Синтаксис: [Команда] [Имя группы]</p>
+		<div class="code-command">
+			<p># Будет создана новая группа с именем - test</p>
+			<p>$ groupdel test</p>
+		</div>
+
 	</div>
 
 </div>

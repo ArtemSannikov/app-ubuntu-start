@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>rm</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="file-directory14" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>rm</h1>
+		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Описание команды -->
+		<h3>Описание</h3>
+		<p>Команда <strong>rm</strong> используется для удаления файлов и каталогов.</p>
+		<p>Синтаксис: [команда] [параметр] [элемент]</p>
+		<div class="code-command">
+			<p>#Перед удалением файла test.txt система запросит подтверждение у пользователя</p>
+			<p>$ rm -i test.txt</p>
+		</div>
+		
+		<h3>Параметры</h3>
+		<p><strong>-i (--interactive</strong> - запрашивать у пользователя подтверждение перед удалением существующего файла. Если этот параметр отсутствует, команда rm просто удалит существующие файлы.</p>
+		<p><strong>-r (--recursive)</strong> - рекурсивно удалить каталоги. То есть вместе с каталогом будут удалены все его подкаталоги. Это обязательный параметр при удалении каталогов.</p>
+		<p><strong>-f (--force)</strong> - игнорировать отсутствующие файлы и не запрашивать подтверждения. Этот параметр отменяет действие параметра --interactive.</p>
+		<p><strong>-v (--verbose)</strong> - выводить информационные сообщения в процессе удаления.</p>
+
+	</div>
+
+</div>
+
+</body>
+</html>

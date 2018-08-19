@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>groupadd [group_name]</title>
+	<title>groupadd</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -24,20 +24,19 @@
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
-		<h1>groupadd [group_name]</h1>
+		<h1>groupadd</h1>
 		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Описание команды -->
-		<h3>Создние новой группы</h3>
-		<p>Для создания новой группы воспользуйтесь командой:</p>
-		<div class="code-command"><p>$ groupadd [group_name] //команда<br/>$ groupadd test //создать новую группу с именем test</p></div>
-		<!--<h3>Видеоурок</h3>
-		<div class="video-youtube">
-			<iframe src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+		<p>Команда <strong>groupadd</strong> создает новое определение группы в системе путем добавления соответствующей записи в файл /etc/group.</p>
+		<p>Синтаксис: [Команда] [Имя группы]</p>
+		<div class="code-command">
+			<p># Будет создана новая группа с именем - test</p>
+			<p>$ groupadd test</p>
+		</div>
+
 	</div>
 
 </div>

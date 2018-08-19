@@ -29,18 +29,17 @@
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Список команд -->
 		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Поиск по командам..">
 			<li data-icon="false">
 				<a href="../command/group-user/groupadd.html" data-transition="none" data-ajax="false">
-					<h2>groupadd [group_name]</h2>
-					<p>Создать новую группу<br/>с именем [group_name].</p>
+					<h2>groupadd</h2>
+					<p>Создание новой группы.</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="../command/group-user/groupdel.html" data-transition="none" data-ajax="false">
-					<h2>groupdel [group_name]</h2>
-					<p>Удалить группу с именем<br/>[group_name].</p>
+					<h2>groupdel</h2>
+					<p>Удаление группы.</p>
 				</a>
 			</li>
 			<li data-icon="false">
@@ -51,8 +50,8 @@
 			</li>
 			<li data-icon="false">
 				<a href="../command/group-user/useradd.html" data-transition="none" data-ajax="false">
-					<h2>useradd [user]</h2>
-					<p>Создать нового<br/>пользователя [user].</p>
+					<h2>useradd</h2>
+					<p>Создать нового пользователя.</p>
 				</a>
 			</li>
 			<li data-icon="false">
@@ -62,9 +61,9 @@
 				</a>
 			</li>
 			<li data-icon="false">
-				<a href="../command/group-user/passwd-user.html" data-transition="none" data-ajax="false">
-					<h2>passwd [user]</h2>
-					<p>Cменить пароль пользователя<br/>[user] (только root).</p>
+				<a href="../command/group-user/passwd.html" data-transition="none" data-ajax="false">
+					<h2>passwd</h2>
+					<p>Изменить пароль пользователя.</p>
 				</a>
 			</li>
 			<li data-icon="false">
@@ -76,16 +75,29 @@
 			<li data-icon="false">
 				<a href="../command/group-user/pwck.html" data-transition="none" data-ajax="false">
 					<h2>pwck</h2>
-					<p>Проверить корректность системных<br/>файлов: /etc/passwd и /etc/shadow<br/>учётных записей</p>
+					<p>Проверка системных файлов: /etc/passwd<br>и /etc/shadow учётных записей</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="../command/group-user/grpck.html" data-transition="none" data-ajax="false">
 					<h2>grpck</h2>
-					<p>Проверить корректность системных<br/>файлов: /etc/group учётных записей.</p>
+					<p>Проверка системных файлов<br>/etc/group учётных записей.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/group-user/w.html" data-transition="none" data-ajax="false">
+					<h2>w</h2>
+					<p>Список пользователей<br>авторизованных в системе.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="../command/group-user/logname.html" data-transition="none" data-ajax="false">
+					<h2>logname</h2>
+					<p>Выводит имя пользователя.</p>
 				</a>
 			</li>
 		</ul>
+		
 	</div>
 
 </div>

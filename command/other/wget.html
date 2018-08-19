@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>wget</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/themes/my-theme.css" />
+	<link rel="stylesheet" href="../../css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../../css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- cordova js -->
+	<script src="../../cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="wget-r" data-theme="a">
+
+	<div data-role="header">
+		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
+		<h1>wget</h1>
+		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<h3>Описание</h3>
+		<p>Утилита <strong>wget</strong> предназначена для загрузки файлов из интернет. Она поддерживает протоколы HTTP, HTTPS, и FTP, загрузку с серверов прокси по протоколу HTTP.</p>
+		<p>wget поддерживает очень много параметров, которыми можно управлять. Чтобы познакомиться с утилитой более детально используйте справочную информацию в вашей системе.</p>
+
+		<h3>Загрузка содержимого сайта</h3>
+		<p><strong>wget -r</strong> позволяет рекурсивно загрузить содержимое указанного сайта.</p>
+		<p>Синтаксис: [Команда] [Параметр] [Ссылка на файл]</p>
+		<div class="code-command">
+			<p># Система загрузит содержимое сайта example.ru</p>
+			<p>$ wget -r www.example.ru</p>
+		</div>
+
+		<h3>Загрузка файла с сайта</h3>
+		<p><strong>wget -c</strong> позволяет загрузить любой файл с сайта, с возможностью остановки и продолжения загрузки.</p>
+		<p>Синтаксис: [Команда] [Параметр] [Ссылка на файл]</p>
+		<div class="code-command">
+			<p># Система будет загружать файл test.iso с сайта www.example.ru</p>
+			<p>$ wget -c www.example.ru/test.iso</p>
+		</div>
+
+		<h3>Загрузка файла с сайта в указанное время</h3>
+		<p>Для загрузки файлов с сайта в нужное для вас время воспользуйтесь следующей командой.</p>
+		<p>Синтаксис: [Команда] [Параметр] [Ссылка на файл]</p>
+		<div class="code-command">
+			<p># Система начнёт загрузку файла test.iso с сайта www.example.ru в 09:00</p>
+			<p>$ echo 'wget -c www.example.ru/test.iso' | at 09:00</p>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

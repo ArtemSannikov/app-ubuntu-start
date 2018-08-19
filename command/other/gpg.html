@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>gpg [file.gpg]</title>
+	<title>gpg</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -24,20 +24,32 @@
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
-		<h1>gpg [file.gpg]</h1>
+		<h1>gpg</h1>
 		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
+		<h3>Описание</h3>
+		<p>Инструмент <strong>gpg</strong> позволяет выполнить шифрование файла и создать цифровую подпись.</p>
+
 		<!-- Описание команды -->
-		<h3>Дешифрация файлов при помощи GNU Privacy Guard</h3>
+		<h3>Шифрование файлов</h3>
+		<p>Чтобы выполнить шифрование файла при помощи GNU Privacy Guard воспользуйтесь следующей командой.</p>
+		<p>Синтаксис: [Команда] [Параметр] [Файл]</p>
+		<div class="code-command">
+			<p># Система зашифрует файл test.txt с помощью GNU Privacy Guard</p>
+			<p>$ gpg -c test.txt</p>
+		</div>
+
+		<h3>Дешифрация файлов</h3>
 		<p>Для дешифрации файлов, которые были зашифрованы пи помощи GNU Privacy Guard воспользуйтесь следующей командой.</p>
-		<div class="code-command"><p>$ gpg [file.gpg] //команда<br/>$ gpg test.gpg //система дешифрует файл test.gpg при помощи GNU Privacy Guard</p></div>
-		<!--<h3>Видеоурок</h3>
-		<div class="video-youtube">
-			<iframe src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+		<p>Синтаксис: [Команда] [Файл]</p>
+		<div class="code-command">
+			<p># Система выполнит дешифрацию файла test.gpg при помощи GNU Privacy Guard</p>
+			<p>$ gpg test.gpg</p>
+		</div>
+
 	</div>
 
 </div>

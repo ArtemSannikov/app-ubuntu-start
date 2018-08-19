@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>alias [alias name]='[command]'</title>
+	<title>alias</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -24,20 +24,20 @@
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
-		<h1>alias [alias name]='[command]'</h1>
+		<h1>alias</h1>
 		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Описание команды -->
-		<h3>Назначить алиас команде</h3>
-		<p>Алиас - псевдоним или короткое название, которое мы можем присвоить любой команде. Для запуска команды необходимо будет вызвать её короткое имя, которое было присвоено раньше.</p>
-		<div class="code-command"><p>$ alias [alias name]='[command]' //команда<br/>$ alias hh='history' //присвоим псевдоним (короткое имя) hh, команде history</p></div>
-		<!--<h3>Видеоурок</h3>
-		<div class="video-youtube">
-			<iframe src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+		<p>Команда <strong>alias</strong> присваивает короткое имя (сокращение) для необходимой команды.</p>
+		<p>Для запуска команды необходимо будет вызвать её короткое имя, которое было присвоено раньше.</p>
+		<p>Синтакис: [Команда] [Короткое имя]=['Команда']</p>
+		<div class="code-command">
+			<p># Система присвоит короткому названию hh, команду history</p>
+			<p>$ alias hh='history'</p>
+		</div>
+
 	</div>
 
 </div>

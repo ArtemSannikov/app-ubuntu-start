@@ -3,7 +3,7 @@
 <head>
 	<!-- Charset -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>fsck [dev]</title>
+	<title>fsck</title>
 	<!-- Include meta tag to ensure proper rendering and touch zooming-->
 	<meta name="view-port" content="width=device-width, initial-scale=1">
 	<!-- Include jQuery Mobile stylesheets -->
@@ -25,20 +25,49 @@
 
 	<div data-role="header">
 		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Кнопка назад</a>
-		<h1>fsck [dev]</h1>
+		<h1>fsck</h1>
 		<a href="../../index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="a" data-ajax="false" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">На главную</a>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Описание команды -->
-		<h3>Проверка файловой системы linux раздела</h3>
-		<p>Проверить/восстановить целостность linux-файловой системы раздела hda1</p>
-		<div class="code-command"><p>$ fsck [раздел] //команда<br/>$ fsck /dev/hda1</p></div>
-		<!--<h3>Видеоурок</h3>
-		<div class="video-youtube">
-			<iframe src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+		<h3>Описание</h3>
+		<p>Команда <strong>fsck</strong> проверяет целостность файловой системы и проводит интерактивную коррекцию ошибок.</p>
+		<p>Синтаксис: [Команда] [Параметры] [Раздел]</p>
+
+		<h3>Параметры</h3>
+		<p><strong>-y</strong> - считать, что на все вопросы дается положительный ответ.</p>
+		<p><strong>-n</strong> - считать, что на все вопросы дается отрицательный ответ. Не открывать файловую систему на запись.</p>
+		<p><strong>-q</strong> - молчаливый вариант fsck. Не печатаются сообщения о возможных ошибках в размере файлов. Именованные каналы, на которые нет ссылок, удаляются без всяких сообщений. Если требуется, счетчики в суперблоке автоматически исправляются, список свободных блоков восстанавливается.</p>
+		<p><strong>-D</strong> - каталоги проверяются на наличие плохих блоков (используется после аварийных завершений системы).</p>
+		<p><strong>-f</strong> - быстрая проверка. Проверяются блоки и размеры (1 фаза) и список свободных блоков (5 фаза). Если необходимо, список свободных блоков реконструируется (6 фаза).</p>
+		<p><strong>-b</strong> - по умолчанию, если проверяемая файловая система является корневой и в нее были внесены изменения, происходит перемонтирование (если повреждения были минимальны) или перезагрузка ОС. Опция -b вызывает принудительную перезагрузку ОС после устранения любых повреждений корневой файловой системы.</p>
+
+
+		<h3>Проверка файловой системы ext2</h3>
+		<p>Проверить/восстановить целостность файловой системы ext2 раздела hda1.</p>
+		<div class="code-command">
+			<p>$ fsck.ext2 /dev/hda1</p>
+		</div>
+
+		<h3>Проверка файловой системы ext3</h3>
+		<p>Проверить/восстановить целостность файловой системы ext3 раздела hda1 с указанием, что журнал расположен там же.</p>
+		<div class="code-command">
+			<p>$ e2fsck -j /dev/hda1</p>
+		</div>
+
+		<h3>Проверка файловой системы ext3</h3>
+		<p>Проверить/восстановить целостность файловой системы ext3 раздела hda1.</p>
+		<div class="code-command">
+			<p>$ fsck.ext3 /dev/hda1</p>
+		</div>
+
+		<h3>Проверка файловой системы fat</h3>
+		<p>Проверить/восстановить целостность файловой системы fat раздела hda1.</p>
+		<div class="code-command">
+			<p>$ fsck.vfat /dev/hda1</p>
+		</div>
+
 	</div>
 
 </div>

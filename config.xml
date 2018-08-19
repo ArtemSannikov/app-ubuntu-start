@@ -2,8 +2,8 @@
 	<widget xmlns        = "http://www.w3.org/ns/widgets"
 		    xmlns:gap    = "http://phonegap.com/ns/1.0"
 		    id           = "com.ubuntu.start"
-		    versionCode  = "6"
-		    version      = "1.0.5">
+		    versionCode  = "7"
+		    version      = "1.0.6">
 
 		    <!-- Название приложения -->
 		    <name>Ubuntu</name>
@@ -31,6 +31,11 @@
 
 			<!-- Разрешения -->
 			<preference name="permissions" value="none"/>
+	
+			<!-- разрешение для переноса приложения на SD карту -->
+			<!--<preference name="android-manifest/@android:installLocation" value="auto" />-->
+			<preference name="android-installLocation" value="auto" />
+			
 			<!--<preference name="fullscreen" value="true" />-->
 			<preference name="AllowInlineMediaPlayback" value="true" /> <!-- разрешить воспроизведение медиафайлов html5 -->
 			<preference name="MediaPlaybackRequiresUserAction" value="false" /> <!-- отмена автоматического воспроизведения -->
